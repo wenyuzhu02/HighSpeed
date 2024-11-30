@@ -1,0 +1,203 @@
+ 
+****************************************
+Report : area
+Design : top_16
+Version: T-2022.03-SP2
+Date   : Thu Nov 28 22:11:45 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gscl45nm (File: /home/ecelrc/students/myang3/vlsi1_24/lab3/gscl45nm.db)
+
+Number of ports:                         5849
+Number of nets:                          7670
+Number of cells:                         2622
+Number of combinational cells:           1806
+Number of sequential cells:                63
+Number of macros/black boxes:               0
+Number of buf/inv:                        228
+Number of references:                       2
+
+Combinational area:               5273.054628
+Buf/Inv area:                      428.001588
+Noncombinational area:             502.620289
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  5775.674917
+Total area:                 undefined
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : top_16
+Version: T-2022.03-SP2
+Date   : Thu Nov 28 22:11:57 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: a_reg[11] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out_reg[27]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  a_reg[11]/CLK (DFFPOSX1)                                0.00       0.00 r
+  a_reg[11]/Q (DFFPOSX1)                                  0.13       0.13 f
+  dadda_mult_16/a[11] (dadda_mult_16)                     0.00       0.13 f
+  dadda_mult_16/in_to_row_16/a[11] (in_to_row_16)         0.00       0.13 f
+  dadda_mult_16/in_to_row_16/U2/Y (AND2X1)                0.06       0.19 f
+  dadda_mult_16/in_to_row_16/row3[11] (in_to_row_16)      0.00       0.19 f
+  dadda_mult_16/stage_1_16/row3_i[14] (stage_1_16)        0.00       0.19 f
+  dadda_mult_16/stage_1_16/f0[14]/a (full_adder_194)      0.00       0.19 f
+  dadda_mult_16/stage_1_16/f0[14]/h0/a (half_adder_390)
+                                                          0.00       0.19 f
+  dadda_mult_16/stage_1_16/f0[14]/h0/U2/Y (XOR2X1)        0.07       0.26 r
+  dadda_mult_16/stage_1_16/f0[14]/h0/s (half_adder_390)
+                                                          0.00       0.26 r
+  dadda_mult_16/stage_1_16/f0[14]/h1/a (half_adder_389)
+                                                          0.00       0.26 r
+  dadda_mult_16/stage_1_16/f0[14]/h1/U1/Y (AND2X1)        0.03       0.29 r
+  dadda_mult_16/stage_1_16/f0[14]/h1/c (half_adder_389)
+                                                          0.00       0.29 r
+  dadda_mult_16/stage_1_16/f0[14]/U1/Y (OR2X1)            0.07       0.36 r
+  dadda_mult_16/stage_1_16/f0[14]/c (full_adder_194)      0.00       0.36 r
+  dadda_mult_16/stage_1_16/row1_o[15] (stage_1_16)        0.00       0.36 r
+  dadda_mult_16/stage_2_16/row1_i[15] (stage_2_16)        0.00       0.36 r
+  dadda_mult_16/stage_2_16/f0[15]/b (full_adder_182)      0.00       0.36 r
+  dadda_mult_16/stage_2_16/f0[15]/h0/b (half_adder_364)
+                                                          0.00       0.36 r
+  dadda_mult_16/stage_2_16/f0[15]/h0/U2/Y (XOR2X1)        0.06       0.41 r
+  dadda_mult_16/stage_2_16/f0[15]/h0/s (half_adder_364)
+                                                          0.00       0.41 r
+  dadda_mult_16/stage_2_16/f0[15]/h1/a (half_adder_363)
+                                                          0.00       0.41 r
+  dadda_mult_16/stage_2_16/f0[15]/h1/U1/Y (AND2X1)        0.03       0.44 r
+  dadda_mult_16/stage_2_16/f0[15]/h1/c (half_adder_363)
+                                                          0.00       0.44 r
+  dadda_mult_16/stage_2_16/f0[15]/U1/Y (OR2X1)            0.07       0.51 r
+  dadda_mult_16/stage_2_16/f0[15]/c (full_adder_182)      0.00       0.51 r
+  dadda_mult_16/stage_2_16/row1_o[16] (stage_2_16)        0.00       0.51 r
+  dadda_mult_16/stage_3_16/row1_i[16] (stage_3_16)        0.00       0.51 r
+  dadda_mult_16/stage_3_16/f0[16]/b (full_adder_138)      0.00       0.51 r
+  dadda_mult_16/stage_3_16/f0[16]/h0/b (half_adder_276)
+                                                          0.00       0.51 r
+  dadda_mult_16/stage_3_16/f0[16]/h0/U2/Y (XOR2X1)        0.06       0.57 r
+  dadda_mult_16/stage_3_16/f0[16]/h0/s (half_adder_276)
+                                                          0.00       0.57 r
+  dadda_mult_16/stage_3_16/f0[16]/h1/a (half_adder_275)
+                                                          0.00       0.57 r
+  dadda_mult_16/stage_3_16/f0[16]/h1/U1/Y (AND2X1)        0.03       0.60 r
+  dadda_mult_16/stage_3_16/f0[16]/h1/c (half_adder_275)
+                                                          0.00       0.60 r
+  dadda_mult_16/stage_3_16/f0[16]/U1/Y (OR2X1)            0.07       0.66 r
+  dadda_mult_16/stage_3_16/f0[16]/c (full_adder_138)      0.00       0.66 r
+  dadda_mult_16/stage_3_16/row1_o[17] (stage_3_16)        0.00       0.66 r
+  dadda_mult_16/stage_4_16/row1_i[17] (stage_4_16)        0.00       0.66 r
+  dadda_mult_16/stage_4_16/f0[17]/b (full_adder_84)       0.00       0.66 r
+  dadda_mult_16/stage_4_16/f0[17]/h0/b (half_adder_168)
+                                                          0.00       0.66 r
+  dadda_mult_16/stage_4_16/f0[17]/h0/U2/Y (XOR2X1)        0.06       0.72 r
+  dadda_mult_16/stage_4_16/f0[17]/h0/s (half_adder_168)
+                                                          0.00       0.72 r
+  dadda_mult_16/stage_4_16/f0[17]/h1/a (half_adder_167)
+                                                          0.00       0.72 r
+  dadda_mult_16/stage_4_16/f0[17]/h1/U1/Y (AND2X1)        0.03       0.75 r
+  dadda_mult_16/stage_4_16/f0[17]/h1/c (half_adder_167)
+                                                          0.00       0.75 r
+  dadda_mult_16/stage_4_16/f0[17]/U1/Y (OR2X1)            0.07       0.82 r
+  dadda_mult_16/stage_4_16/f0[17]/c (full_adder_84)       0.00       0.82 r
+  dadda_mult_16/stage_4_16/row1_o[18] (stage_4_16)        0.00       0.82 r
+  dadda_mult_16/stage_5_16/row1_i[18] (stage_5_16)        0.00       0.82 r
+  dadda_mult_16/stage_5_16/f0[18]/b (full_adder_38)       0.00       0.82 r
+  dadda_mult_16/stage_5_16/f0[18]/h0/b (half_adder_76)
+                                                          0.00       0.82 r
+  dadda_mult_16/stage_5_16/f0[18]/h0/U2/Y (XOR2X1)        0.06       0.87 r
+  dadda_mult_16/stage_5_16/f0[18]/h0/s (half_adder_76)
+                                                          0.00       0.87 r
+  dadda_mult_16/stage_5_16/f0[18]/h1/a (half_adder_75)
+                                                          0.00       0.87 r
+  dadda_mult_16/stage_5_16/f0[18]/h1/U1/Y (AND2X1)        0.03       0.90 r
+  dadda_mult_16/stage_5_16/f0[18]/h1/c (half_adder_75)
+                                                          0.00       0.90 r
+  dadda_mult_16/stage_5_16/f0[18]/U1/Y (OR2X1)            0.07       0.97 r
+  dadda_mult_16/stage_5_16/f0[18]/c (full_adder_38)       0.00       0.97 r
+  dadda_mult_16/stage_5_16/row1_o[19] (stage_5_16)        0.00       0.97 r
+  dadda_mult_16/stage_6_16/row1_i[19] (stage_6_16)        0.00       0.97 r
+  dadda_mult_16/stage_6_16/f0[19]/b (full_adder_11)       0.00       0.97 r
+  dadda_mult_16/stage_6_16/f0[19]/h0/b (half_adder_22)
+                                                          0.00       0.97 r
+  dadda_mult_16/stage_6_16/f0[19]/h0/U2/Y (XOR2X1)        0.06       1.03 r
+  dadda_mult_16/stage_6_16/f0[19]/h0/s (half_adder_22)
+                                                          0.00       1.03 r
+  dadda_mult_16/stage_6_16/f0[19]/h1/a (half_adder_21)
+                                                          0.00       1.03 r
+  dadda_mult_16/stage_6_16/f0[19]/h1/U1/Y (AND2X1)        0.03       1.06 r
+  dadda_mult_16/stage_6_16/f0[19]/h1/c (half_adder_21)
+                                                          0.00       1.06 r
+  dadda_mult_16/stage_6_16/f0[19]/U1/Y (OR2X1)            0.07       1.13 r
+  dadda_mult_16/stage_6_16/f0[19]/c (full_adder_11)       0.00       1.13 r
+  dadda_mult_16/stage_6_16/row1_o[20] (stage_6_16)        0.00       1.13 r
+  dadda_mult_16/adder_30/B[19] (adder_30)                 0.00       1.13 r
+  dadda_mult_16/adder_30/propGen[19]/B (PG_10)            0.00       1.13 r
+  dadda_mult_16/adder_30/propGen[19]/U2/Y (XOR2X1)        0.05       1.18 f
+  dadda_mult_16/adder_30/propGen[19]/P (PG_10)            0.00       1.18 f
+  dadda_mult_16/adder_30/layer_0[19]/P_1 (blackCell_95)
+                                                          0.00       1.18 f
+  dadda_mult_16/adder_30/layer_0[19]/U3/Y (AOI21X1)       0.04       1.21 r
+  dadda_mult_16/adder_30/layer_0[19]/U1/Y (BUFX2)         0.03       1.24 r
+  dadda_mult_16/adder_30/layer_0[19]/U4/Y (INVX1)         0.02       1.27 f
+  dadda_mult_16/adder_30/layer_0[19]/G (blackCell_95)     0.00       1.27 f
+  dadda_mult_16/adder_30/layer_1[21]/G_0 (blackCell_67)
+                                                          0.00       1.27 f
+  dadda_mult_16/adder_30/layer_1[21]/U3/Y (AOI21X1)       0.04       1.30 r
+  dadda_mult_16/adder_30/layer_1[21]/U1/Y (BUFX2)         0.03       1.33 r
+  dadda_mult_16/adder_30/layer_1[21]/U4/Y (INVX1)         0.02       1.35 f
+  dadda_mult_16/adder_30/layer_1[21]/G (blackCell_67)     0.00       1.35 f
+  dadda_mult_16/adder_30/layer_2[25]/G_0 (blackCell_38)
+                                                          0.00       1.35 f
+  dadda_mult_16/adder_30/layer_2[25]/U3/Y (AOI21X1)       0.04       1.39 r
+  dadda_mult_16/adder_30/layer_2[25]/U1/Y (BUFX2)         0.03       1.42 r
+  dadda_mult_16/adder_30/layer_2[25]/U2/Y (INVX1)         0.01       1.44 f
+  dadda_mult_16/adder_30/layer_2[25]/G (blackCell_38)     0.00       1.44 f
+  dadda_mult_16/adder_30/layer_3[25]/G_1 (blackCell_17)
+                                                          0.00       1.44 f
+  dadda_mult_16/adder_30/layer_3[25]/U3/Y (AOI21X1)       0.02       1.46 r
+  dadda_mult_16/adder_30/layer_3[25]/U1/Y (BUFX2)         0.03       1.49 r
+  dadda_mult_16/adder_30/layer_3[25]/U4/Y (INVX1)         0.01       1.50 f
+  dadda_mult_16/adder_30/layer_3[25]/G (blackCell_17)     0.00       1.50 f
+  dadda_mult_16/adder_30/layer_4[25]/G_1 (blackCell_4)
+                                                          0.00       1.50 f
+  dadda_mult_16/adder_30/layer_4[25]/U3/Y (AOI21X1)       0.02       1.52 r
+  dadda_mult_16/adder_30/layer_4[25]/U1/Y (BUFX2)         0.03       1.55 r
+  dadda_mult_16/adder_30/layer_4[25]/U2/Y (INVX1)         0.02       1.57 f
+  dadda_mult_16/adder_30/layer_4[25]/G (blackCell_4)      0.00       1.57 f
+  dadda_mult_16/adder_30/U12/Y (XOR2X1)                   0.03       1.60 f
+  dadda_mult_16/adder_30/C[26] (adder_30)                 0.00       1.60 f
+  dadda_mult_16/c[27] (dadda_mult_16)                     0.00       1.60 f
+  data_out_reg[27]/D (DFFPOSX1)                           0.00       1.60 f
+  data arrival time                                                  1.60
+
+  clock clk (rise edge)                                2000.00    2000.00
+  clock network delay (ideal)                             0.00    2000.00
+  data_out_reg[27]/CLK (DFFPOSX1)                         0.00    2000.00 r
+  library setup time                                     -0.06    1999.94
+  data required time                                              1999.94
+  --------------------------------------------------------------------------
+  data required time                                              1999.94
+  data arrival time                                                 -1.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1998.34
+
+

@@ -1,0 +1,6 @@
+Command exited with non-zero status 1
+{"vcs1":{"timestamp_begin":1732736085.364087143, "rt":0.08, "ut":0.03, "st":0.02}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1732736085.036565199}
+{"VCS_COMP_START_TIME": 1732736085.036565199}
+{"VCS_COMP_END_TIME": 1732736085.522331481}
+{"VCS_USER_OPTIONS": "-full64 -f cmd_fl -debug"}

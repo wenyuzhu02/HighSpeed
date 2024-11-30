@@ -1,0 +1,147 @@
+ 
+****************************************
+Report : area
+Design : top_8
+Version: T-2022.03-SP2
+Date   : Thu Nov 28 21:54:46 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    gscl45nm (File: /home/ecelrc/students/myang3/vlsi1_24/lab3/gscl45nm.db)
+
+Number of ports:                         1339
+Number of nets:                          1788
+Number of cells:                          643
+Number of combinational cells:            442
+Number of sequential cells:                31
+Number of macros/black boxes:               0
+Number of buf/inv:                         74
+Number of references:                       2
+
+Combinational area:               1263.824859
+Buf/Inv area:                      138.912796
+Noncombinational area:             247.321095
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                  1511.145954
+Total area:                 undefined
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : top_8
+Version: T-2022.03-SP2
+Date   : Thu Nov 28 21:55:00 2024
+****************************************
+
+Operating Conditions: typical   Library: gscl45nm
+Wire Load Model Mode: top
+
+  Startpoint: a_reg[7] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  a_reg[7]/CLK (DFFPOSX1)                                 0.00       0.00 r
+  a_reg[7]/Q (DFFPOSX1)                                   0.12       0.12 f
+  dadda_mult_8/a[7] (dadda_mult_8)                        0.00       0.12 f
+  dadda_mult_8/in_to_row_8/a[7] (in_to_row_8)             0.00       0.12 f
+  dadda_mult_8/in_to_row_8/U1/Y (AND2X1)                  0.06       0.17 f
+  dadda_mult_8/in_to_row_8/row2[7] (in_to_row_8)          0.00       0.17 f
+  dadda_mult_8/stage_1_8/row2_i[9] (stage_1_8)            0.00       0.17 f
+  dadda_mult_8/stage_1_8/f0/a (full_adder_0)              0.00       0.17 f
+  dadda_mult_8/stage_1_8/f0/h0/a (half_adder_70)          0.00       0.17 f
+  dadda_mult_8/stage_1_8/f0/h0/U2/Y (XOR2X1)              0.07       0.24 r
+  dadda_mult_8/stage_1_8/f0/h0/s (half_adder_70)          0.00       0.24 r
+  dadda_mult_8/stage_1_8/f0/h1/a (half_adder_69)          0.00       0.24 r
+  dadda_mult_8/stage_1_8/f0/h1/U1/Y (AND2X1)              0.03       0.27 r
+  dadda_mult_8/stage_1_8/f0/h1/c (half_adder_69)          0.00       0.27 r
+  dadda_mult_8/stage_1_8/f0/U1/Y (OR2X1)                  0.07       0.34 r
+  dadda_mult_8/stage_1_8/f0/c (full_adder_0)              0.00       0.34 r
+  dadda_mult_8/stage_1_8/row1_o[10] (stage_1_8)           0.00       0.34 r
+  dadda_mult_8/stage_2_8/row1_i[10] (stage_2_8)           0.00       0.34 r
+  dadda_mult_8/stage_2_8/f0[10]/b (full_adder_28)         0.00       0.34 r
+  dadda_mult_8/stage_2_8/f0[10]/h0/b (half_adder_56)      0.00       0.34 r
+  dadda_mult_8/stage_2_8/f0[10]/h0/U2/Y (XOR2X1)          0.06       0.39 r
+  dadda_mult_8/stage_2_8/f0[10]/h0/s (half_adder_56)      0.00       0.39 r
+  dadda_mult_8/stage_2_8/f0[10]/h1/a (half_adder_55)      0.00       0.39 r
+  dadda_mult_8/stage_2_8/f0[10]/h1/U2/Y (XOR2X1)          0.07       0.47 r
+  dadda_mult_8/stage_2_8/f0[10]/h1/s (half_adder_55)      0.00       0.47 r
+  dadda_mult_8/stage_2_8/f0[10]/s (full_adder_28)         0.00       0.47 r
+  dadda_mult_8/stage_2_8/row0_o[10] (stage_2_8)           0.00       0.47 r
+  dadda_mult_8/stage_3_8/row0_i[10] (stage_3_8)           0.00       0.47 r
+  dadda_mult_8/stage_3_8/f0[10]/a (full_adder_14)         0.00       0.47 r
+  dadda_mult_8/stage_3_8/f0[10]/h0/a (half_adder_28)      0.00       0.47 r
+  dadda_mult_8/stage_3_8/f0[10]/h0/U2/Y (XOR2X1)          0.07       0.54 r
+  dadda_mult_8/stage_3_8/f0[10]/h0/s (half_adder_28)      0.00       0.54 r
+  dadda_mult_8/stage_3_8/f0[10]/h1/a (half_adder_27)      0.00       0.54 r
+  dadda_mult_8/stage_3_8/f0[10]/h1/U2/Y (XOR2X1)          0.07       0.62 r
+  dadda_mult_8/stage_3_8/f0[10]/h1/s (half_adder_27)      0.00       0.62 r
+  dadda_mult_8/stage_3_8/f0[10]/s (full_adder_14)         0.00       0.62 r
+  dadda_mult_8/stage_3_8/row0_o[10] (stage_3_8)           0.00       0.62 r
+  dadda_mult_8/stage_4_8/row0_i[10] (stage_4_8)           0.00       0.62 r
+  dadda_mult_8/stage_4_8/f0[10]/a (full_adder_4)          0.00       0.62 r
+  dadda_mult_8/stage_4_8/f0[10]/h0/a (half_adder_8)       0.00       0.62 r
+  dadda_mult_8/stage_4_8/f0[10]/h0/U2/Y (XOR2X1)          0.07       0.69 r
+  dadda_mult_8/stage_4_8/f0[10]/h0/s (half_adder_8)       0.00       0.69 r
+  dadda_mult_8/stage_4_8/f0[10]/h1/a (half_adder_7)       0.00       0.69 r
+  dadda_mult_8/stage_4_8/f0[10]/h1/U1/Y (AND2X1)          0.03       0.72 r
+  dadda_mult_8/stage_4_8/f0[10]/h1/c (half_adder_7)       0.00       0.72 r
+  dadda_mult_8/stage_4_8/f0[10]/U1/Y (OR2X1)              0.07       0.79 r
+  dadda_mult_8/stage_4_8/f0[10]/c (full_adder_4)          0.00       0.79 r
+  dadda_mult_8/stage_4_8/row1_o[11] (stage_4_8)           0.00       0.79 r
+  dadda_mult_8/adder_14/B[10] (adder_14)                  0.00       0.79 r
+  dadda_mult_8/adder_14/propGen[10]/B (PG_3)              0.00       0.79 r
+  dadda_mult_8/adder_14/propGen[10]/U2/Y (XOR2X1)         0.05       0.84 f
+  dadda_mult_8/adder_14/propGen[10]/P (PG_3)              0.00       0.84 f
+  dadda_mult_8/adder_14/layer_0[10]/P_1 (blackCell_27)
+                                                          0.00       0.84 f
+  dadda_mult_8/adder_14/layer_0[10]/U3/Y (AOI21X1)        0.04       0.87 r
+  dadda_mult_8/adder_14/layer_0[10]/U1/Y (BUFX2)          0.03       0.91 r
+  dadda_mult_8/adder_14/layer_0[10]/U2/Y (INVX1)          0.02       0.93 f
+  dadda_mult_8/adder_14/layer_0[10]/G (blackCell_27)      0.00       0.93 f
+  dadda_mult_8/adder_14/layer_1[12]/G_0 (blackCell_15)
+                                                          0.00       0.93 f
+  dadda_mult_8/adder_14/layer_1[12]/U3/Y (AOI21X1)        0.04       0.96 r
+  dadda_mult_8/adder_14/layer_1[12]/U1/Y (BUFX2)          0.03       0.99 r
+  dadda_mult_8/adder_14/layer_1[12]/U4/Y (INVX1)          0.01       1.01 f
+  dadda_mult_8/adder_14/layer_1[12]/G (blackCell_15)      0.00       1.01 f
+  dadda_mult_8/adder_14/layer_2[12]/G_1 (blackCell_6)     0.00       1.01 f
+  dadda_mult_8/adder_14/layer_2[12]/U3/Y (AOI21X1)        0.02       1.03 r
+  dadda_mult_8/adder_14/layer_2[12]/U1/Y (BUFX2)          0.03       1.06 r
+  dadda_mult_8/adder_14/layer_2[12]/U4/Y (INVX1)          0.01       1.07 f
+  dadda_mult_8/adder_14/layer_2[12]/G (blackCell_6)       0.00       1.07 f
+  dadda_mult_8/adder_14/layer_3[12]/G_1 (blackCell_1)     0.00       1.07 f
+  dadda_mult_8/adder_14/layer_3[12]/U3/Y (AOI21X1)        0.02       1.09 r
+  dadda_mult_8/adder_14/layer_3[12]/U1/Y (BUFX2)          0.03       1.12 r
+  dadda_mult_8/adder_14/layer_3[12]/U4/Y (INVX1)          0.02       1.14 f
+  dadda_mult_8/adder_14/layer_3[12]/G (blackCell_1)       0.00       1.14 f
+  dadda_mult_8/adder_14/U10/Y (XOR2X1)                    0.03       1.17 f
+  dadda_mult_8/adder_14/C[13] (adder_14)                  0.00       1.17 f
+  dadda_mult_8/c[14] (dadda_mult_8)                       0.00       1.17 f
+  data_out_reg[14]/D (DFFPOSX1)                           0.00       1.17 f
+  data arrival time                                                  1.17
+
+  clock clk (rise edge)                                2000.00    2000.00
+  clock network delay (ideal)                             0.00    2000.00
+  data_out_reg[14]/CLK (DFFPOSX1)                         0.00    2000.00 r
+  library setup time                                     -0.06    1999.94
+  data required time                                              1999.94
+  --------------------------------------------------------------------------
+  data required time                                              1999.94
+  data arrival time                                                 -1.17
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1998.77
+
+

@@ -1,0 +1,116 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Thu Nov 28 22:06:36 2024
+Host:		mario.ece.utexas.edu (x86_64 w/Linux 4.18.0-553.27.1.el8_10.x86_64) (16cores*64cpus*Intel(R) Xeon(R) Gold 5218 CPU @ 2.30GHz 22528KB)
+OS:		Red Hat Enterprise Linux release 8.10 (Ootpa)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /usr/local/packages/cadence_2017/innovus171/tools.lnx86/lib/64bit/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by /usr/local/packages/cadence_2022/INNOVUS211/oa_v22.60.087/lib/linux_rhel60_64/opt/liboaDesign.so)
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /usr/local/packages/cadence_2017/innovus171/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPOAX-142):	OA features will be disabled in this session.
+
+Change the soft stacksize limit to 0.2%RAM (771 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (IMPOAX-820):	The OA features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (IMPOAX-850):	oaxCreateCdsLibArray command cannot be run as OA features are disabled in this session.
+**WARN: (IMPLF-155):	ViaRule only supports routing/cut layer, but poly layer found for viaRule 'M1_POLY', 
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.15min, fe_real=0.67min, fe_mem=517.9M) ***
+*** Netlist is unique.
+Loading preference file /home/ecelrc/students/wzhu1/HighSpeed/apr/Nov28run1_4/top_4.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-modulePlan" for command setPlaceMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (IMPOPT-6036):	-useCells list is empty.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**WARN: (IMPSYT-709):	The next major release of EDI will use the
+Multi-Mode/Multi-Corner (MMMC) architecture exclusively for configuration and
+control of some software features. The current configuration will continue to
+work in this release. But for compatibility with the future releases you
+should migrate your design to an MMMC style configuration. You can refer to
+the What's New document for this release for additional information on the
+11.1 migration to MMMC. In addition, you can run restoreDesign with the
+-showEolWarnings option to identify specific command and configuration
+options that will no longer be supported.
+
+
+INFO : The design has been initialized into physical-only mode. In this mode,
+       you will not have access to any functionality requiring the activation of
+       the timing or extraction systems. For additional functionality, you will need
+       to either restart the software, or issue a freeDesign command to reset the software.
+
+<CMD> setDrawView place
+<CMD> uiSetTool ruler
+<CMD> pan -58.975 -24.459
+<CMD> pan -31.658 -34.940
+<CMD> pan 11.766 28.604
+<CMD> fit
+<CMD> fit
+<CMD> fit
+<CMD> saveDesign top_4
+#% Begin save design ... (date=11/28 22:10:00, mem=849.1M)
+% Begin Save netlist data ... (date=11/28 22:10:00, mem=850.8M)
+Writing Binary DB to top_4.dat.tmp/top_4.v.bin in single-threaded mode...
+% End Save netlist data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=853.0M, current mem=853.0M)
+% Begin Save AAE data ... (date=11/28 22:10:00, mem=853.0M)
+Saving AAE Data ...
+% End Save AAE data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=853.0M, current mem=853.0M)
+% Begin Save clock tree data ... (date=11/28 22:10:00, mem=853.0M)
+% End Save clock tree data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=853.0M, current mem=853.0M)
+Saving preference file top_4.dat.tmp/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=11/28 22:10:00, mem=853.6M)
+Saving floorplan file ...
+% End Save floorplan data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=853.8M, current mem=853.8M)
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+% Begin Save placement data ... (date=11/28 22:10:00, mem=853.8M)
+** Saving stdCellPlacement_binary (version# 1) ...
+% End Save placement data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=854.2M, current mem=854.2M)
+% Begin Save routing data ... (date=11/28 22:10:00, mem=854.2M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=962.7M) ***
+% End Save routing data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=854.3M, current mem=854.3M)
+Saving property file top_4.dat.tmp/top_4.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=962.7M) ***
+% Begin Save power constraints data ... (date=11/28 22:10:00, mem=856.3M)
+% End Save power constraints data ... (date=11/28 22:10:00, total cpu=0:00:00.0, real=0:00:00.0, peak res=856.6M, current mem=856.6M)
+**ERROR: (IMPOAX-142):	Could not open shared library libinnovusoax22.so : /usr/local/packages/cadence_2017/innovus171/tools.lnx86/lib/64bit/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by /usr/local/packages/cadence_2022/INNOVUS211/oa_v22.60.087/lib/linux_rhel60_64/opt/liboaDesign.so)
+
+**ERROR: (IMPOAX-142):	Could not open shared library libcdsSkillPcell.so : /usr/local/packages/cadence_2017/innovus171/tools.lnx86/lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE
+
+**ERROR: (IMPSYT-6245):	Error , while saving MS constraint file.
+Generated self-contained design top_4.dat.tmp
+#% End save design ... (date=11/28 22:10:01, total cpu=0:00:00.3, real=0:00:01.0, peak res=858.6M, current mem=858.6M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+ERROR     IMPSYT-6245          1  Error %s, while saving MS constraint fil...
+ERROR     IMPOAX-142           2  %s                                       
+*** Message Summary: 0 warning(s), 3 error(s)
+
+
+*** Memory Usage v#1 (Current mem = 973.879M, initial mem = 186.469M) ***
+*** Message Summary: 6 warning(s), 8 error(s)
+
+--- Ending "Innovus" (totcpu=0:00:14.4, real=0:03:32, mem=973.9M) ---
